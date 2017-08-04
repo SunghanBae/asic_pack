@@ -1,9 +1,9 @@
 #!/bin/bash
 #brips=1193
 #eurica=1408
-aida=1111
+aida=1121
 
-for((i=0;i<8;i++))
+for((i=0;i<5;i++))
 do
 
 name=R${aida}_${i}_packed

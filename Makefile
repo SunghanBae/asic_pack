@@ -1,4 +1,4 @@
-OBJ= asicpacker asicpacker_all
+OBJ= asicpacker asicpacker_all ts_repair
 
 all: $(OBJ)
 
@@ -11,6 +11,9 @@ INCLUDES	= -I$(ROOTSYS)include
 CXX	= g++
 
 asicpacker: asicpacker.cpp AIDAraw.h
+	$(CXX) $< -o $@ $(INCLUDES) $(ROOTLIBS) $(ROOTGLIBS) $(ROOTCFLAGS)
+
+ts_repair: ts_repair.cpp AIDAraw.h
 	$(CXX) $< -o $@ $(INCLUDES) $(ROOTLIBS) $(ROOTGLIBS) $(ROOTCFLAGS)
 
 asicpacker_all: asicpacker_all.cpp AIDAraw.h
