@@ -60,7 +60,10 @@ public :
    virtual void     Show(Long64_t entry = -1);
    virtual Long64_t GetToffset();
    virtual Int_t    GetListEntry(TEntryList* l, Long64_t entry);
+<<<<<<< HEAD
    virtual Int_t    GetEntriesFast();
+=======
+>>>>>>> 079cd85d2b7ebdc830da287210fd6d8a5f1c7e9e
    virtual Long64_t    SetADCEntryList(TEntryList* l);
 };
 
@@ -112,6 +115,7 @@ Long64_t AIDAraw::SetADCEntryList(TEntryList* l)
    return l->GetN();
 }
 
+<<<<<<< HEAD
 Int_t AIDAraw::GetEntriesFast()
 {
 
@@ -122,6 +126,8 @@ Int_t AIDAraw::GetEntriesFast()
 }
 
 
+=======
+>>>>>>> 079cd85d2b7ebdc830da287210fd6d8a5f1c7e9e
 Int_t AIDAraw::GetListEntry(TEntryList*l, Long64_t entry)
 {
    if(!fChain) return 0;

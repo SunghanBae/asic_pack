@@ -33,6 +33,7 @@ int main (int argv, char* argc[]){
 		int mainrunnum = atoi(argc[1]);
 		int subrunnum = atoi(argc[2]);
 
+<<<<<<< HEAD
 //		sprintf(fi,"$AIDADIR/R%4d_%d.root",mainrunnum,subrunnum);
 //		fin=Form("$AIDADIR/R%4d_%d.root",mainrunnum,subrunnum);
 		sprintf(fi,"$AIDADIR/R%4d_%d_tr.root",mainrunnum,subrunnum);
@@ -43,6 +44,14 @@ int main (int argv, char* argc[]){
 //		fin=Form("$AIDADIR/R%4d.root",mainrunnum);
 		sprintf(fi,"$AIDADIR/R%4d_tr.root",mainrunnum);	
 		fin=Form("$AIDADIR/R%4d_tr.root",mainrunnum);
+=======
+		sprintf(fi,"$AIDADIR/R%4d_%d.root",mainrunnum,subrunnum);
+		fin=Form("$AIDADIR/R%4d_%d.root",mainrunnum,subrunnum);
+	}else if (argv==2){
+		int mainrunnum = atoi(argc[1]);	
+		sprintf(fi,"$AIDADIR/R%4d.root",mainrunnum);	
+		fin=Form("$AIDADIR/R%4d.root",mainrunnum);
+>>>>>>> 079cd85d2b7ebdc830da287210fd6d8a5f1c7e9e
 	}else {std::cout<<"USAGE: ./asicpacker AIDARUN# AIDASUBRUN# or ./asicpacker AIDARUN#"<<endl; return -1;}
 
 	//reading raw file
